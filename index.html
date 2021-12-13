@@ -2,18 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet"/>
     <title>Form</title>
 </head>
 <body>
 <!--Your Code Goes Below this line-->
+<form id="survey-form">
+    <div class="container">
+        <header class="header">
+            <h1 class="text-center" id="title">Web Design Survey Form</h1>
+            <p class="description text-center" id="description">
+                This is Lukas's super cool survey
+            </p>
+        </header>
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Your Name"
+                    required
+                    type="text"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Your Email"
+                    required
+                    type="email"
+            />
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">
+                Age<span class="clue"></span></label>
+            <input
+                    class="form-control"
+                    id="number"
+                    max="99"
+                    min="10"
+                    name="number"
+                    placeholder="Enter Your Age"
+                    type="number"
+            />
+        </div>
+        <div class="form-group">
+            <label for="song">What is your favorite song?</label>
+            <select class="form-control" id="song" name="song" required>
+                <option disabled selected value>Select current role</option>
+                <option value="Sicko Mode">Sicko Mode</option>
+                <option value="Mo Bamba">Mo Bamba</option>
+                <option value="Grenade">Grenade</option>
+                <option value="The Joe Poop Song">Joe Poop Song</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Is pocket aces better than pocket 3's?</p>
+            <label>
+                <input
+                        checked
+                        class="input-radio"
+                        name="user-recommend"
+                        type="radio"
+                        value="definitely"
+                />Yes</label
+            >
+            <label>
+                <input
+                        class="input-radio"
+                        name="user-recommend"
+                        type="radio"
+                        value="definitely"
+                />No</label
+            >
+            <label>
+                <input
+                        class="input-radio"
+                        name="user-recommend"
+                        type="radio"
+                        value="definitely"
+                />IDC</label
+            >
+        </div>
+        <div class="form-group">
+            <p>Additional Comments</p>
+            <textarea
+                    class="input-textarea"
+                    id="comments"
+                    name="comment"
+                    placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+        <div class="form-group">
+            <button class="button button-primary" id="submit" type="submit">submit</button>
+        </div>
 
 
+    </div>
+</form>
 <!--Your Code Goes Above this line-->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
